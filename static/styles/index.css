@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/static/img/fundo-nuvem.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titulo-apresentacao {
+    color: white;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+#botao {
+    margin-top: 100px;
+    height: 70px;
+    width: 180px;
+    font-size: 1.3em;
+    
+}
+
+
+
+
+
+
+
+
