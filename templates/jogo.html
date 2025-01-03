@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles/jogo.css">
+    <script src="/static/src/onclick.js"></script>
+    <script src="/static/src/doubleclick.js"></script>
     <title>Pula Nuvem</title>
 </head>
 <body>
@@ -16,14 +18,13 @@
         <div class="principal"> <!--isso daqui vai ser onde o jogo vai rodar-->
 
             <div class="caminho"> 
-                  
                 {{ Caminho | safe }}
             </div>
         </div>
 
         <div class="controles">
-            <button id="Pulo">pulo</button>
-            <button id="PuloDublo">pulo dublo</button>
+            <button id="Pulo"  onclick="pulo()">pulo</button>
+            <button id="PuloDublo" onclick="doubleclick()">pulo dublo</button>
         </div>
     </main>
 </body>

@@ -1,7 +1,4 @@
 from fastapi import FastAPI, Request # type: ignore
-
-
-
 from fastapi.responses import HTMLResponse # type: ignore
 from fastapi.templating import Jinja2Templates # type: ignore
 from fastapi.staticfiles import StaticFiles # type: ignore
@@ -36,10 +33,19 @@ async def read_root(request: Request):
         "request": request, 
         "message": "Bem-vindo ao FastAPI!", 
         "Caminho": CaminhoHtml
+
+
     })
 
-
-
+@app.post("/onclick")
+async def onclick(data: dict):
+    print("onclick clicado! Dados recebidos:", data)
+    return {"message": "onclick clicado com sucesso!"}
+    
+@app.post("/doubleclick")
+async def doubleclick(data: dict):
+    print("doubleclick clicado! Dados recebidos:", data)
+    return {"message": "doubleclick clicado com sucesso!"}
 
 
 
