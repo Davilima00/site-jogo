@@ -8,4 +8,6 @@ async function doubleclick() {
     });
     const result = await response.json();
     console.log(result.message);
+
 }
+

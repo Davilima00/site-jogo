@@ -27,7 +27,7 @@ async def read_root(request: Request):
 @app.get("/jogo", response_class=HTMLResponse)
 async def read_root(request: Request):
 
-    CaminhoHtml = BlocoCheio() + BlocoCheio() + BlocoVazio() + BlocoVazio() + BlocoVazio()
+    CaminhoHtml = BlocoCheio() + BlocoCheio() + BlocoVazio() + BlocoCheio() + BlocoVazio() + BlocoVazio()
 
     return templates.TemplateResponse("jogo.html", {
         "request": request, 
@@ -37,15 +37,24 @@ async def read_root(request: Request):
 
     })
 
+
+prosicao = 0
+
 @app.post("/onclick")
 async def onclick(data: dict):
+    global prosicao
+    prosicao += 1
+
+    print(prosicao)
     print("onclick clicado! Dados recebidos:", data)
-    return {"message": "onclick clicado com sucesso!"}
-    
+    return {"message": "onclick clicado com sucesso!", "prosicao": prosicao}
+
 @app.post("/doubleclick")
 async def doubleclick(data: dict):
+    global prosicao
+    prosicao += 2
+
+    print(prosicao)
     print("doubleclick clicado! Dados recebidos:", data)
-    return {"message": "doubleclick clicado com sucesso!"}
-
-
+    return {"message": "doubleclick clicado com sucesso!", "prosicao": prosicao}
 

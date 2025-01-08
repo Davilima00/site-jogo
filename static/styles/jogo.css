@@ -10,7 +10,7 @@
 main {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/pixil-frame-0-18.png");
+    background-image: url("../img/fundo-jogo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,19 +28,36 @@ main {
     background-color: #86c4eb;
 
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
 
     margin-bottom: 150px;
 
 }
 
+#personagem {
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/personagem-principal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+
 .caminho {
-    height: 100px;
+    height: 90px;
     width: 80vw;
 
 
     display: flex;
     align-items: flex-end;
+    justify-content: baseline;
     flex-direction: row;
 
 }
@@ -49,11 +66,12 @@ main {
     width: 150px;
     height: 60px;
     
-
-    border: 1px  solid black;
-    background-color: #1e99e6;
+    background-image: url("../img/nuvem-branca.png");
+    background-position: center;
+    background-size: cover;
 
     margin: 10px;
+    margin-top: 0;
 }
 
 .BlocoVazio {
@@ -62,4 +80,6 @@ main {
 
     border: 1px  solid black;
     margin: 10px;
+    margin-top: 0;
 }
+

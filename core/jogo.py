@@ -1,19 +1,7 @@
 def BlocoCheio():
-    BlocoCheio = """
-            <div class="blococheio"> 
-            </div>
-    """
-    
-    return BlocoCheio
-
+    return """<div class="BlocoCheio"></div>"""
 
 def BlocoVazio():
-    BlocoVazio = """
-            <div class="bloco-vazio"> 
-            </div>
-    """
-
-    return BlocoVazio
-
+    return """<div class="BlocoVazio"></div>"""
 
 

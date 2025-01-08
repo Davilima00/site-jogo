@@ -8,6 +8,8 @@ async function pulo() {
     });
     const result = await response.json();
     console.log(result.message);
+
 }
+
 
 
