@@ -1,0 +1,54 @@
+[
+    {
+        "caminho": [
+            {
+                "proxicao": 1,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 2,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 3,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 4,
+                "bloco": "<div class=\"BlocoVazio\"></div>"
+            },
+            {
+                "proxicao": 5,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 6,
+                "bloco": "<div class=\"BlocoVazio\"></div>"
+            },
+            {
+                "proxicao": 7,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 8,
+                "bloco": "<div class=\"BlocoVazio\"></div>"
+            },
+            {
+                "proxicao": 9,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 10,
+                "bloco": "<div class=\"BlocoVazio\"></div>"
+            },
+            {
+                "proxicao": 11,
+                "bloco": "<div class=\"BlocoCheio\"></div>"
+            },
+            {
+                "proxicao": 12,
+                "bloco": "<div class=\"BlocoVazio\"></div>"
+            }
+        ]
+    }
+]

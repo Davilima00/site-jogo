@@ -3,7 +3,8 @@ from fastapi.responses import HTMLResponse # type: ignore
 from fastapi.templating import Jinja2Templates # type: ignore
 from fastapi.staticfiles import StaticFiles # type: ignore
 
-from core.caminho import BlocoCheio, BlocoVazio
+from core.jogo import BlocoCheio, BlocoVazio, GerarCaminho
+
 
 
 app = FastAPI()
@@ -27,7 +28,7 @@ async def read_root(request: Request):
 @app.get("/jogo", response_class=HTMLResponse)
 async def read_root(request: Request):
 
-    CaminhoHtml = BlocoCheio() + BlocoCheio() + BlocoVazio() + BlocoCheio() + BlocoVazio() + BlocoVazio()
+    CaminhoHtml = GerarCaminho()
 
     return templates.TemplateResponse("jogo.html", {
         "request": request, 
