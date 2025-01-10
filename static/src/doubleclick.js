@@ -7,7 +7,7 @@ async function doubleclick() {
         body: JSON.stringify({ message: "Hello from the frontend!" })
     });
     const result = await response.json();
-    console.log(result.message);
+    console.log(result);
 
 }
 

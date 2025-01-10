@@ -11,11 +11,11 @@
             },
             {
                 "proxicao": 3,
-                "bloco": "<div class=\"BlocoCheio\"></div>"
+                "bloco": "<div class=\"BlocoVazio\"></div>"
             },
             {
                 "proxicao": 4,
-                "bloco": "<div class=\"BlocoVazio\"></div>"
+                "bloco": "<div class=\"BlocoCheio\"></div>"
             },
             {
                 "proxicao": 5,
@@ -31,23 +31,7 @@
             },
             {
                 "proxicao": 8,
-                "bloco": "<div class=\"BlocoVazio\"></div>"
-            },
-            {
-                "proxicao": 9,
                 "bloco": "<div class=\"BlocoCheio\"></div>"
-            },
-            {
-                "proxicao": 10,
-                "bloco": "<div class=\"BlocoVazio\"></div>"
-            },
-            {
-                "proxicao": 11,
-                "bloco": "<div class=\"BlocoCheio\"></div>"
-            },
-            {
-                "proxicao": 12,
-                "bloco": "<div class=\"BlocoVazio\"></div>"
             }
         ]
     }
